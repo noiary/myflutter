@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_flutterdemo" default="compile.module.flutterdemo">
+  <dirname property="module.flutterdemo.basedir" file="${ant.file.module_flutterdemo}"/>
+  
+  <property name="module.jdk.home.flutterdemo" value=""/>
+  <property name="module.jdk.bin.flutterdemo" value=""/>
+  <property name="module.jdk.classpath.flutterdemo" value=""/>
+  
+  <property name="compiler.args.flutterdemo" value="-encoding UTF-8 -source 1.3 -target 1.3 ${compiler.args}"/>
+  
+  <property name="flutterdemo.output.dir" value="${module.flutterdemo.basedir}/out/production/flutterdemo"/>
+  <property name="flutterdemo.testoutput.dir" value="${module.flutterdemo.basedir}/out/test/flutterdemo"/>
+  
+  <path id="flutterdemo.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="flutterdemo.module.production.classpath">
+    <path refid="library.dart_sdk.classpath"/>
+    <path refid="library.dart_packages.classpath"/>
+    <path refid="library.flutter_plugins.classpath"/>
+  </path>
+  
+  <path id="flutterdemo.runtime.production.module.classpath">
+    <pathelement location="${flutterdemo.output.dir}"/>
+    <path refid="library.dart_sdk.classpath"/>
+    <path refid="library.dart_packages.classpath"/>
+    <path refid="library.flutter_plugins.classpath"/>
+  </path>
+  
+  <path id="flutterdemo.module.classpath">
+    <pathelement location="${flutterdemo.output.dir}"/>
+    <path refid="library.dart_sdk.classpath"/>
+    <path refid="library.dart_packages.classpath"/>
+    <path refid="library.flutter_plugins.classpath"/>
+  </path>
+  
+  <path id="flutterdemo.runtime.module.classpath">
+    <pathelement location="${flutterdemo.testoutput.dir}"/>
+    <pathelement location="${flutterdemo.output.dir}"/>
+    <path refid="library.dart_sdk.classpath"/>
+    <path refid="library.dart_packages.classpath"/>
+    <path refid="library.flutter_plugins.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.flutterdemo">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.flutterdemo">
+    <patternset refid="excluded.from.module.flutterdemo"/>
+  </patternset>
+  
+  
+  <target name="compile.module.flutterdemo" depends="compile.module.flutterdemo.production,compile.module.flutterdemo.tests" description="Compile module flutterdemo"/>
+  
+  <target name="compile.module.flutterdemo.production" depends="register.custom.compilers" description="Compile module flutterdemo; production classes"/>
+  
+  <target name="compile.module.flutterdemo.tests" depends="register.custom.compilers,compile.module.flutterdemo.production" description="compile module flutterdemo; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.flutterdemo" description="cleanup module">
+    <delete dir="${flutterdemo.output.dir}"/>
+    <delete dir="${flutterdemo.testoutput.dir}"/>
+  </target>
+</project>

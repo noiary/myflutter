@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_flutterfemo_android" default="compile.module.flutterfemo_android">
+  <dirname property="module.flutterfemo_android.basedir" file="${ant.file.module_flutterfemo_android}"/>
+  
+  <property name="module.jdk.home.flutterfemo_android" value="${jdk.home.android_api_27,_p_preview_platform}"/>
+  <property name="module.jdk.bin.flutterfemo_android" value="${jdk.bin.android_api_27,_p_preview_platform}"/>
+  <property name="module.jdk.classpath.flutterfemo_android" value="jdk.classpath.android_api_27,_p_preview_platform"/>
+  
+  <property name="compiler.args.flutterfemo_android" value="-encoding UTF-8 -source 1.3 -target 1.3 ${compiler.args}"/>
+  
+  <property name="flutterfemo_android.output.dir" value="${module.flutterfemo_android.basedir}/out/production/flutterfemo_android"/>
+  <property name="flutterfemo_android.testoutput.dir" value="${module.flutterfemo_android.basedir}/out/test/flutterfemo_android"/>
+  
+  <path id="flutterfemo_android.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="flutterfemo_android.module.production.classpath">
+    <path refid="${module.jdk.classpath.flutterfemo_android}"/>
+    <path refid="library.flutter_for_android.classpath"/>
+  </path>
+  
+  <path id="flutterfemo_android.runtime.production.module.classpath">
+    <pathelement location="${flutterfemo_android.output.dir}"/>
+    <path refid="library.flutter_for_android.classpath"/>
+  </path>
+  
+  <path id="flutterfemo_android.module.classpath">
+    <path refid="${module.jdk.classpath.flutterfemo_android}"/>
+    <pathelement location="${flutterfemo_android.output.dir}"/>
+    <path refid="library.flutter_for_android.classpath"/>
+  </path>
+  
+  <path id="flutterfemo_android.runtime.module.classpath">
+    <pathelement location="${flutterfemo_android.testoutput.dir}"/>
+    <pathelement location="${flutterfemo_android.output.dir}"/>
+    <path refid="library.flutter_for_android.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.flutterfemo_android">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.flutterfemo_android">
+    <patternset refid="excluded.from.module.flutterfemo_android"/>
+  </patternset>
+  
+  <path id="flutterfemo_android.module.sourcepath">
+    <dirset dir="${module.flutterfemo_android.basedir}/android">
+      <include name="app/src/main/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.flutterfemo_android" depends="compile.module.flutterfemo_android.production,compile.module.flutterfemo_android.tests" description="Compile module flutterfemo_android"/>
+  
+  <target name="compile.module.flutterfemo_android.production" depends="register.custom.compilers" description="Compile module flutterfemo_android; production classes">
+    <mkdir dir="${flutterfemo_android.output.dir}"/>
+    <javac2 destdir="${flutterfemo_android.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.flutterfemo_android}/javac">
+      <compilerarg line="${compiler.args.flutterfemo_android}"/>
+      <bootclasspath refid="flutterfemo_android.module.bootclasspath"/>
+      <classpath refid="flutterfemo_android.module.production.classpath"/>
+      <src refid="flutterfemo_android.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.flutterfemo_android"/>
+    </javac2>
+    
+    <copy todir="${flutterfemo_android.output.dir}">
+      <fileset dir="${module.flutterfemo_android.basedir}/android/app/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.flutterfemo_android.tests" depends="register.custom.compilers,compile.module.flutterfemo_android.production" description="compile module flutterfemo_android; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.flutterfemo_android" description="cleanup module">
+    <delete dir="${flutterfemo_android.output.dir}"/>
+    <delete dir="${flutterfemo_android.testoutput.dir}"/>
+  </target>
+</project>
