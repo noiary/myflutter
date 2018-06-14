@@ -7,26 +7,31 @@ class ContainerDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
+      color: Colors.white,
       child: new Container(
-        child: new Text(
-          "hello",
-          style: new TextStyle(fontSize: 40.0, color: Colors.white),
+        child: new Container(
+          child: new Text(
+            "hello",
+            style: new TextStyle(fontSize: 40.0, color: Colors.white),
+          ),
+          color: Colors.lightBlue,
         ),
-        color: Colors.lightBlue,
-      ),
-      alignment: Alignment.center,
-      decoration: new BoxDecoration(
-          gradient: const RadialGradient(
-              colors: [Colors.lightBlue, Colors.greenAccent, Colors.purple])),
-      foregroundDecoration: new BoxDecoration(
-          border: new Border.all(
-              color: Colors.redAccent, width: 10.0, style: BorderStyle.solid)),
+        alignment: Alignment.center,
+        decoration: new BoxDecoration(
+            gradient: const RadialGradient(
+                colors: [Colors.lightBlue, Colors.greenAccent, Colors.purple])),
+        foregroundDecoration: new BoxDecoration(
+            border: new Border.all(
+                color: Colors.redAccent,
+                width: 10.0,
+                style: BorderStyle.solid)),
 //            width: 300.0,
 //            height: 300.0,
-      padding: new EdgeInsets.all(20.0),
-      margin: new EdgeInsets.all(20.0),
+        padding: new EdgeInsets.all(20.0),
+        margin: new EdgeInsets.all(20.0),
 //            constraints: new BoxConstraints.loose(new Size(250.0, 250.0)),
-      transform: new Matrix4.rotationZ(0.1),
+        transform: new Matrix4.rotationZ(0.1),
+      ),
     );
   }
 }
