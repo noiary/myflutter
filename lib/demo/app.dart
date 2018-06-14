@@ -15,8 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: "Flutter Demo",
+
       theme: new ThemeData(
         primaryColor: Colors.white,
+        platform: TargetPlatform.iOS
       ),
       home: new Scaffold(
         appBar: new AppBar(
@@ -48,18 +50,5 @@ class MyApp extends StatelessWidget {
         );
       }).toList(),
     );
-
-//    return new Center(
-//      child: new Column(
-//        mainAxisAlignment: MainAxisAlignment.center,
-//        crossAxisAlignment: CrossAxisAlignment.center,
-//        children: <Widget>[
-//          new HomeItem("Hello World", HELLO_WORLD),
-//          new HomeItem("ListView", LIST_VIEW),
-//          new HomeItem("Container", CONTAINER),
-//          new HomeItem("Image", IMAGE),
-//        ],
-//      ),
-//    );
   }
 }
