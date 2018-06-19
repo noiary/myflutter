@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d15dbc47-24ba-4868-9940-f1ce69c27282" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshots/animation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/container.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/helloworld.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/listview.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -223,9 +218,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23645833" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.35625" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.35625" />
       <window_info id="Captures" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.18667401" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.18667401" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" sideWeight="0.50323623" side_tool="true" visible="true" weight="0.18667401" />
       <window_info anchor="right" id="Flutter Inspector" order="3" visible="true" weight="0.17070484" />
@@ -435,7 +430,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
