@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d15dbc47-24ba-4868-9940-f1ce69c27282" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshots/home.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/animation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/container.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/helloworld.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/listview.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +33,8 @@
       <file leaf-file-name="app.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/demo/app.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="27" selection-start-line="27" selection-end-line="51" selection-end-column="24" />
+            <state relative-caret-position="138">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -42,8 +45,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+            <state relative-caret-position="225">
+              <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -65,8 +68,8 @@
         <option value="$PROJECT_DIR$/lib/demo/home.dart" />
         <option value="$PROJECT_DIR$/ignore.gitignore" />
         <option value="$PROJECT_DIR$/lib/demo/Demo.dart" />
-        <option value="$PROJECT_DIR$/lib/demo/app.dart" />
         <option value="$PROJECT_DIR$/lib/demo/demo.dart" />
+        <option value="$PROJECT_DIR$/lib/demo/app.dart" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -114,6 +117,9 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screenshots" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/screenshots" />
     </key>
@@ -215,13 +221,13 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23645833" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23645833" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.35625" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.35625" />
       <window_info id="Captures" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49658936" visible="true" weight="0.18667401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.18667401" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.50341064" side_tool="true" visible="true" weight="0.18667401" />
+      <window_info id="Favorites" order="2" sideWeight="0.50323623" side_tool="true" visible="true" weight="0.18667401" />
       <window_info anchor="right" id="Flutter Inspector" order="3" visible="true" weight="0.17070484" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32948717" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,18 +421,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/demo/app.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" selection-start-line="27" selection-end-line="51" selection-end-column="24" />
+        <state relative-caret-position="138">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots/image.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+        <state relative-caret-position="225">
+          <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
         </state>
       </provider>
     </entry>
