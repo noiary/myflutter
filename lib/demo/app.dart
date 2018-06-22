@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterfemo/demo/demo.dart';
 import 'package:flutterfemo/demo/Listdemo.dart';
 import 'package:flutterfemo/demo/home.dart';
+import 'package:flutterfemo/page/custom_widget.dart';
 import 'package:flutterfemo/page/hello_world.dart';
 
 final String HELLO_WORLD = "/demo/hello";
@@ -10,6 +11,7 @@ final String LIST_VIEW = "/demo/list";
 final String CONTAINER = "/demo/container";
 final String IMAGE = "/demo/image";
 final String ANIMATION = "/demo/animation";
+final String CUSTOM_WIDGET = "/page/custom_widget";
 
 class MyApp extends StatelessWidget {
   @override
@@ -25,6 +27,7 @@ class MyApp extends StatelessWidget {
         CONTAINER: (_) => new ContainerDemo(),
         IMAGE: (_) => new ImageDemo(),
         ANIMATION: (_) => new AnimationDemo(),
+        CUSTOM_WIDGET: (_) => new CustomWidget(),
       },
     );
   }
@@ -57,6 +60,7 @@ class MyState extends State<MyHome> with TickerProviderStateMixin {
         new HomeItem("Container", CONTAINER),
         new HomeItem("Image", IMAGE),
         new HomeItem("animation", ANIMATION),
+        new HomeItem("CustomWidget", CUSTOM_WIDGET),
       ].map((Widget homeItem) {
         return new Container(
           padding: const EdgeInsets.symmetric(vertical: 12.0),
